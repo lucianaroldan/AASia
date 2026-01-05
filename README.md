@@ -74,4 +74,4 @@ The visualization confirms that the AAS structure, submodels, and properties are
 After completing the execution, the generated AAS was evaluated using the Generic Evaluation Template — AASia.  
 The evaluation follows the interpretation and generation constraints defined by the AASia prompts and focuses on coverage of the input description, submodel structure, property representation, data types, range and unit modeling, schema compliance, and execution metrics.
 
-Both the generated artifacts and the corresponding evaluation report are available in the repository under the folder `TestCase-PackMaster3000`.
+Both the generated artifacts and the corresponding evaluation report are available in the repository under the folder `/test_packmaster3000`.
