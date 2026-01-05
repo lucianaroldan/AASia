@@ -37,7 +37,10 @@ The system identifies relevant entities, groups related attributes, and organize
 These screenshots partially show the Asset Administration Shell automatically generated in JSON format.  
 The interpreted structure is translated into AAS-compliant elements, including submodels, properties, value types, and qualifiers, following the constraints defined by the AASia generation prompt.
 
-![Generated AAS JSON](images/step3_generated_json.png)
+![Generated AAS JSON](images/step3_generated_json_1.png)
+![Generated AAS JSON](images/step3_generated_json_2.png)
+![Generated AAS JSON](images/step3_generated_json_3.png)
+![Generated AAS JSON](images/step3_generated_json_4.png)
 
 ---
 
