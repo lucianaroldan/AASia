@@ -67,7 +67,7 @@ The AASX file bundles the Asset Administration Shell and its associated submodel
 This screenshot shows the generated AASX package opened in the AASX Package Explorer tool.  
 The visualization confirms that the AAS structure, submodels, and properties are correctly recognized and navigable by an external AAS-compliant editor.
 
-![AASX Package Explorer visualization](images/step6_aasx_visualization.png)
+![AASX Package Explorer visualization](images/step6_aasx_package.png)
 
 ---
 
