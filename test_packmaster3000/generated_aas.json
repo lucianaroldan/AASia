@@ -1,0 +1,278 @@
+{
+  "assetAdministrationShells": [
+    {
+      "idShort": "PackMaster3000",
+      "id": "urn:asset:packmaster3000",
+      "modelType": "AssetAdministrationShell",
+      "description": [
+        {
+          "language": "en",
+          "text": "MÃ¡quina de empaque automÃ¡tica PackMaster-3000 de ACME Automation"
+        }
+      ],
+      "assetInformation": {
+        "assetKind": "Instance",
+        "globalAssetId": "urn:asset:packmaster3000"
+      },
+      "submodels": [
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "urn:sm:nameplate"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "urn:sm:technicaldata"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "urn:sm:operatingdata"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "urn:sm:mechanicaldata"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "urn:sm:coolingsystem"
+            }
+          ]
+        },
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "urn:sm:controlsystem"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "submodels": [
+    {
+      "idShort": "Nameplate",
+      "id": "urn:sm:nameplate",
+      "modelType": "Submodel",
+      "submodelElements": [
+        {
+          "modelType": "Property",
+          "idShort": "manufacturer",
+          "valueType": "xs:string",
+          "value": "ACME_Automation"
+        },
+        {
+          "modelType": "Property",
+          "idShort": "model",
+          "valueType": "xs:string",
+          "value": "PackMaster_3000"
+        },
+        {
+          "modelType": "Property",
+          "idShort": "serial_number",
+          "valueType": "xs:string",
+          "value": "PM3K_2024_0456"
+        }
+      ]
+    },
+    {
+      "idShort": "TechnicalData",
+      "id": "urn:sm:technicaldata",
+      "modelType": "Submodel",
+      "submodelElements": [
+        {
+          "modelType": "Property",
+          "idShort": "nominal_throughput",
+          "valueType": "xs:string",
+          "value": "320 packages/min"
+        },
+        {
+          "modelType": "Property",
+          "idShort": "operating_speed_min",
+          "valueType": "xs:decimal",
+          "value": "150",
+          "qualifiers": [
+            {
+              "type": "UNIT",
+              "valueType": "xs:string",
+              "value": "packages/min"
+            }
+          ]
+        },
+        {
+          "modelType": "Property",
+          "idShort": "operating_speed_max",
+          "valueType": "xs:decimal",
+          "value": "350",
+          "qualifiers": [
+            {
+              "type": "UNIT",
+              "valueType": "xs:string",
+              "value": "packages/min"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "idShort": "OperatingData",
+      "id": "urn:sm:operatingdata",
+      "modelType": "Submodel",
+      "submodelElements": [
+        {
+          "modelType": "Property",
+          "idShort": "electrical_supply_voltage",
+          "valueType": "xs:string",
+          "value": "400 V AC, 3-phase"
+        },
+        {
+          "modelType": "Property",
+          "idShort": "operating_frequency",
+          "valueType": "xs:decimal",
+          "value": "50",
+          "qualifiers": [
+            {
+              "type": "UNIT",
+              "valueType": "xs:string",
+              "value": "Hz"
+            }
+          ]
+        },
+        {
+          "modelType": "Property",
+          "idShort": "power_consumption_min",
+          "valueType": "xs:decimal",
+          "value": "12.5",
+          "qualifiers": [
+            {
+              "type": "UNIT",
+              "valueType": "xs:string",
+              "value": "kW"
+            }
+          ]
+        },
+        {
+          "modelType": "Property",
+          "idShort": "power_consumption_max",
+          "valueType": "xs:decimal",
+          "value": "18.0",
+          "qualifiers": [
+            {
+              "type": "UNIT",
+              "valueType": "xs:string",
+              "value": "kW"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "idShort": "MechanicalData",
+      "id": "urn:sm:mechanicaldata",
+      "modelType": "Submodel",
+      "submodelElements": [
+        {
+          "modelType": "Property",
+          "idShort": "operating_temperature_min",
+          "valueType": "xs:decimal",
+          "value": "5",
+          "qualifiers": [
+            {
+              "type": "UNIT",
+              "valueType": "xs:string",
+              "value": "°C"
+            }
+          ]
+        },
+        {
+          "modelType": "Property",
+          "idShort": "operating_temperature_max",
+          "valueType": "xs:decimal",
+          "value": "45",
+          "qualifiers": [
+            {
+              "type": "UNIT",
+              "valueType": "xs:string",
+              "value": "°C"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "idShort": "CoolingSystem",
+      "id": "urn:sm:coolingsystem",
+      "modelType": "Submodel",
+      "submodelElements": [
+        {
+          "modelType": "Property",
+          "idShort": "compressed_air_supply_pressure_min",
+          "valueType": "xs:decimal",
+          "value": "6",
+          "qualifiers": [
+            {
+              "type": "UNIT",
+              "valueType": "xs:string",
+              "value": "bar"
+            }
+          ]
+        },
+        {
+          "modelType": "Property",
+          "idShort": "compressed_air_supply_pressure_max",
+          "valueType": "xs:decimal",
+          "value": "8",
+          "qualifiers": [
+            {
+              "type": "UNIT",
+              "valueType": "xs:string",
+              "value": "bar"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "idShort": "ControlSystem",
+      "id": "urn:sm:controlsystem",
+      "modelType": "Submodel",
+      "submodelElements": [
+        {
+          "modelType": "Property",
+          "idShort": "plc_model",
+          "valueType": "xs:string",
+          "value": "Siemens_S7-1500"
+        },
+        {
+          "modelType": "Property",
+          "idShort": "plc_firmware_version",
+          "valueType": "xs:string",
+          "value": "V2.9"
+        }
+      ]
+    }
+  ]
+}

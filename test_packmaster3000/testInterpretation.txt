@@ -1,0 +1,24 @@
+AAS Name: PackMaster3000
+AAS Description: Máquina de empaque automática PackMaster-3000 de ACME Automation
+• Nameplate
+    - manufacturer: ACME_Automation
+    - model: PackMaster_3000
+    - serial_number: PM3K_2024_0456
+• TechnicalData
+    - nominal_throughput: 320 packages/min
+    - operating_speed_min: 150 packages/min
+    - operating_speed_max: 350 packages/min
+• OperatingData
+    - electrical_supply_voltage: 400 V AC, 3-phase
+    - operating_frequency: 50 Hz
+    - power_consumption_min: 12.5 kW
+    - power_consumption_max: 18.0 kW
+• MechanicalData
+    - operating_temperature_min: 5 °C
+    - operating_temperature_max: 45 °C
+• CoolingSystem
+    - compressed_air_supply_pressure_min: 6 bar
+    - compressed_air_supply_pressure_max: 8 bar
+• ControlSystem
+    - plc_model: Siemens_S7-1500
+    - plc_firmware_version: V2.9
