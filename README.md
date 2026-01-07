@@ -4,6 +4,21 @@ AASia is a lightweight no-code framework designed to run locally and operate eff
 
 This repository includes a default configuration using a locally deployed instruction-tuned LLM (tested with LM Studio). The LLM backend is abstracted and can be replaced by any compatible local or API-based model.
 
+## LLM Backends
+
+This project is designed to be backend-agnostic with respect to the underlying Large Language Model (LLM).
+The LLM interface follows an OpenAI-compatible API, allowing the backend to be easily replaced.
+
+### Supported backends
+
+- **Groq API (cloud)**
+  - Endpoint: https://api.groq.com/openai/v1/chat/completions
+  - Requires a user-provided API key (e.g., via environment variable `GROQ_API_KEY`)
+
+- **Local OpenAI-compatible server**
+  - Example: LM Studio
+  - Endpoint: http://localhost:1234/v1/chat/completions
+
 For security reasons, API credentials for external providers are not included. Users interested in experimenting with API-based LLMs can configure the corresponding adapter by providing their own credentials.
 
 ---
